@@ -8,6 +8,15 @@ module spacer(length=6) {
   color(color_aluminum) rotate_extrude(convexity = 32) polygon(body);
 }
 
+module nylon_spacer(length=3.175) {
+  r1=4;
+  r2=M5/2;
+  color(color_nylon) difference() {
+    cylinder(r=r1, h=length);
+    translate([0, 0, -0.5]) cylinder(r=r2, h=length+1);
+  }
+}
+
 module spacer_test() {
   translate([0, 0, 0])   spacer((1/8)*inch);
   translate([30, 0, 0])  spacer((1/4)*inch);
@@ -18,4 +27,6 @@ module spacer_test() {
   translate([180, 0, 0]) spacer(20);
   translate([210, 0, 0]) spacer(35);
   translate([240, 0, 0]) spacer(40);
+  translate([270, 0, 0]) nylon_spacer(1/8*inch);
+  translate([300, 0, 0]) nylon_spacer(1/4*inch);
 }
