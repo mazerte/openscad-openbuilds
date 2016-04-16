@@ -30,5 +30,8 @@ spacer_test();*/
 /*include <shims_and_spacers/shim.scad>;
 shim_test();*/
 
-include <screws/screw.scad>;
-screw_test();
+/*include <screws/screw.scad>;
+screw_test();*/
+
+include <plates/vslot_gantry_plate.scad>;
+vslot_gantry_plate_test();
