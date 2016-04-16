@@ -18,5 +18,8 @@ lbracket_test();*/
 /*include <brackets/angle_corner.scad>;
 angle_corner_test();*/
 
-include <brackets/cube_corner.scad>;
-cube_corner_test();
+/*include <brackets/cube_corner.scad>;
+cube_corner_test();*/
+
+include <brackets/end_cap.scad>;
+end_cap_test();
