@@ -12,5 +12,11 @@ translate([0, -80, 0]) rail_test();*/
 /*include <wheels/vwheel.scad>;
 vwheel_test();*/
 
-include <brackets/lbracket.scad>;
-lbracket_test();
+/*include <brackets/lbracket.scad>;
+lbracket_test();*/
+
+/*include <brackets/angle_corner.scad>;
+angle_corner_test();*/
+
+include <brackets/cube_corner.scad>;
+cube_corner_test();
