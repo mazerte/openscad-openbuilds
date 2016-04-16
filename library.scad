@@ -24,5 +24,8 @@ cube_corner_test();*/
 /*include <brackets/end_cap.scad>;
 end_cap_test();*/
 
-include <shims_and_spacers/spacer.scad>;
-spacer_test();
+/*include <shims_and_spacers/spacer.scad>;
+spacer_test();*/
+
+include <shims_and_spacers/shim.scad>;
+shim_test();
