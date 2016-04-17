@@ -33,5 +33,8 @@ shim_test();*/
 /*include <screws/screw.scad>;
 screw_test();*/
 
-include <plates/vslot_gantry_plate.scad>;
-vslot_gantry_plate_test();
+/*include <plates/vslot_gantry_plate.scad>;
+vslot_gantry_plate_test();*/
+
+include <plates/joining_plate.scad>;
+joining_plate_test();
