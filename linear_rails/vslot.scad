@@ -1,5 +1,5 @@
 use <MCAD/shapes.scad>;
-use <utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module vslot(length=50, sections=1, finish) {
   size=20;

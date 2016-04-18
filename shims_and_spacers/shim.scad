@@ -1,4 +1,4 @@
-use <utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module shim(r1=5, r2=2.5, length=1) {
   color(color_aluminum) difference() {

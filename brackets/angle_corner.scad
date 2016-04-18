@@ -1,4 +1,4 @@
-use <utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module angle_corner() {
   size=20.0;

@@ -1,5 +1,5 @@
 include <MCAD/units.scad>;
-use <../utils/colors.scad>;
+include <../utils/colors.scad>;
 
 thingness=3.17;
 

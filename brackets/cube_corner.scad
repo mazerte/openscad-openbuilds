@@ -1,4 +1,4 @@
-use <utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module cube_corner() {
   size=20.0;

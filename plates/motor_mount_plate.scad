@@ -1,6 +1,6 @@
 include <MCAD/units.scad>;
 include <MCAD/shapes.scad>;
-use <../utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module motor_mount_plate_body(w, h, r=5, thingness=3) {
   difference() {

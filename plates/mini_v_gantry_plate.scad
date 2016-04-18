@@ -1,6 +1,6 @@
 include <MCAD/units.scad>;
 include <MCAD/shapes.scad>;
-use <../utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module mini_v_gantry_plate(material=color_black) {
   w=50;

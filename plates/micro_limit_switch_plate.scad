@@ -1,5 +1,5 @@
 include <MCAD/units.scad>;
-use <../utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module micro_limit_switch_plate(material=color_black) {
   thingness=3;

@@ -1,5 +1,5 @@
-use <utils/colors.scad>;
-use <bearings/bearing.scad>;
+include <../utils/colors.scad>;
+use <../bearings/bearing.scad>;
 
 module vwheel(type="solid", material=color_black) {
   model = type == "mini" ? 105 : 625;

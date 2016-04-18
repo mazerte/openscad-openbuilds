@@ -1,5 +1,5 @@
 include <MCAD/units.scad>;
-use <../utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module joining_plate(holes=[], h=4, d=M5, pintch=20, material=color_aluminum) {
   function before(value) = value*pintch-pintch/2;

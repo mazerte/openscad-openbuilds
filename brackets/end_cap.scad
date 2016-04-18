@@ -1,5 +1,5 @@
 use <MCAD/shapes.scad>;
-use <utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module end_cap() {
   size=20;

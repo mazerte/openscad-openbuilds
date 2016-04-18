@@ -1,4 +1,4 @@
-use <utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module lbracket(size=1) {
   r=2.75;

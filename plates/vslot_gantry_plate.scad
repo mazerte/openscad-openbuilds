@@ -1,5 +1,5 @@
 include <MCAD/shapes.scad>;
-use <../utils/colors.scad>;
+include <../utils/colors.scad>;
 
 r1=2.5;
 r2=3.6;

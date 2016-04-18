@@ -1,5 +1,5 @@
 use <MCAD/shapes.scad>;
-use <utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module rail(length=50) {
   width=19.52;

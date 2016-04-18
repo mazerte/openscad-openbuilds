@@ -1,5 +1,5 @@
 include <MCAD/units.scad>;
-use <../utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module hexa_screw(head, r1, r2, h1, h2, h3, material=color_black) {
   chamfer=0.25;
