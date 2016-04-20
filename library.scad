@@ -1,6 +1,6 @@
 $fn = 32;
 
-/*include <linear_rails/vslot.scad>;
+include <linear_rails/vslot.scad>;
 translate([0, 0, 0]) vslot_test();
 
 include <linear_rails/rail.scad>;
@@ -46,7 +46,10 @@ include <plates/motor_mount_plate.scad>;
 translate([-210, -340, 0]) motor_mount_plate_test();
 
 include <plates/mini_v_gantry_plate.scad>;
-translate([0, -340, 0])  mini_v_gantry_plate_test();*/
+translate([0, -340, 0])  mini_v_gantry_plate_test();
 
 include <plates/build_plate.scad>;
-translate([0, 0, 0]) build_plate_test();
+translate([300, -300, 0]) build_plate_test();
+
+include <plates/gantry_plate.scad>;
+translate([150, 200, 0]) gantry_plate_test();
