@@ -62,3 +62,6 @@ translate([40, 40, 0]) hex_locknut_test();
 
 include <hardware/eccentric_spacer.scad>;
 translate([60, 40, 0]) eccentric_spacer_test();
+
+include <hardware/tnut.scad>;
+translate([100, 20, 0]) tnut_test();
