@@ -1,5 +1,5 @@
 include <MCAD/units.scad>;
-use <utils/colors.scad>;
+include <../utils/colors.scad>;
 
 module spacer(length=6) {
   r1=5;
@@ -13,7 +13,7 @@ module nylon_spacer(length=3.175) {
   r2=M5/2;
   color(color_nylon) difference() {
     cylinder(r=r1, h=length);
-    translate([0, 0, -0.5]) cylinder(r=r2, h=length+1);
+    translate([0, 0, -0.5]) cylinder(r=r2, h=1+length);
   }
 }
 

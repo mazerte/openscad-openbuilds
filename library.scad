@@ -9,6 +9,9 @@ translate([0, -80, 0]) rail_test();
 include <wheels/vwheel.scad>;
 translate([0, 80, 0]) vwheel_test();
 
+include <wheels/pulley.scad>;
+translate([0, 40, 0]) pulley_test();
+
 include <brackets/lbracket.scad>;
 translate([0, 120, 0]) lbracket_test();
 
