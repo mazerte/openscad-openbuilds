@@ -1,7 +1,7 @@
 include <../utils/colors.scad>;
 include <MCAD/units.scad>;
 
-module hex_lock_nut(screw_size=M5, wrench_size=M8, inside_material=color_nylon, body_material=color_aluminum, length=5, head=1) {
+module hex_locknut(screw_size=M5, wrench_size=M8, inside_material=color_nylon, body_material=color_aluminum, length=5, head=1) {
   thread=0.4;
   r=wrench_size/2;
   r2=(wrench_size/2)*cos(360/12);
@@ -28,6 +28,6 @@ module hex_lock_nut(screw_size=M5, wrench_size=M8, inside_material=color_nylon, 
   }
 }
 
-module hex_lock_nut_test() {
-  hex_lock_nut();
+module hex_locknut_test() {
+  hex_locknut();
 }

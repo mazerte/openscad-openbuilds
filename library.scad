@@ -58,4 +58,7 @@ include <plates/gantry_plate.scad>;
 translate([150, 200, 0]) gantry_plate_test();
 
 include <hardware/hex_locknut.scad>;
-translate([40, 40, 0]) hex_lock_nut_test();
+translate([40, 40, 0]) hex_locknut_test();
+
+include <hardware/eccentric_spacer.scad>;
+translate([60, 40, 0]) eccentric_spacer_test();
