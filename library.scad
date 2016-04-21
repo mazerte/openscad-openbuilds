@@ -56,3 +56,6 @@ translate([300, -300, 0]) build_plate_test();
 
 include <plates/gantry_plate.scad>;
 translate([150, 200, 0]) gantry_plate_test();
+
+include <hardware/hex_locknut.scad>;
+translate([40, 40, 0]) hex_lock_nut_test();
