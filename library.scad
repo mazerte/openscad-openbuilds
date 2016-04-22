@@ -77,3 +77,6 @@ translate([170, 40, 0]) mounting_hub_test();
 
 include <hardware/flexible_coupling.scad>;
 translate([-300, 40, 0]) flexible_coupling_test();
+
+include <belts_and_pulleys/timing_pulley.scad>;
+translate([-250, -110, 0]) timing_pulley_test();
