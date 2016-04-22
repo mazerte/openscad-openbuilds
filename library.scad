@@ -80,3 +80,6 @@ translate([-300, 40, 0]) flexible_coupling_test();
 
 include <belts_and_pulleys/timing_pulley.scad>;
 translate([-250, -110, 0]) timing_pulley_test();
+
+include <screws/acme_lead_screw.scad>;
+translate([250, 0, 0]) acme_lead_screw_test();
