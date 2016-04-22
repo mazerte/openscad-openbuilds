@@ -74,3 +74,6 @@ translate([200, 140, 0]) acme_lead_screw_nut_test();
 
 include <hardware/mounting_hub.scad>;
 translate([170, 40, 0]) mounting_hub_test();
+
+include <hardware/flexible_coupling.scad>;
+translate([-300, 40, 0]) flexible_coupling_test();
