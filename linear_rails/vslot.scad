@@ -9,7 +9,7 @@ module vslot(length=50, sections=1, finish) {
   cutint2=[[8.20, 8.20], [6.57, 8.20], [6.57, 7.62], [7.62, 6.57], [8.20, 6.57]];
 
   module profile() {
-    difference() {
+    translate([0, 0, length/2]) difference() {
       roundedBox(size*sections, size, length, 1.8);
       for (section=[0:sections-1]) {
         offset = -(sections-1)*(size/2)+section*size;

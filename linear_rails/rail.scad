@@ -10,7 +10,7 @@ module rail(length=50) {
   head=[[0.00, 0.00], [0.00, height*2], [0.60, height*2], [height+0.60, height], [0.60, 0.00], [0.00, 0.00]];
 
   module profile() {
-    difference() {
+    translate([0, 0, length/2]) difference() {
       union() {
         roundedBox(width + 0.25, height, length, 0.25);
         translate([width/2 - 0.25, -height/2, -length/2]) linear_extrude(length) polygon(head);
