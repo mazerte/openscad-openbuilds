@@ -71,3 +71,6 @@ translate([-40, 40, 0]) lock_collar_test();
 
 include <hardware/acme_lead_screw_nut.scad>;
 translate([200, 140, 0]) acme_lead_screw_nut_test();
+
+include <hardware/mounting_hub.scad>;
+translate([170, 40, 0]) mounting_hub_test();
