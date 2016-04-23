@@ -18,21 +18,21 @@ use <../hardware/hex_locknut.scad>;
 use <../hardware/eccentric_spacer.scad>;
 use <../wheels/vwheel.scad>;
 
-$fn=32;
+$fn=16;
 
 module linear_actuator_bundle(length=250, position=0.5) {
-  p = (length-110) * position + 55;
+  p = (length-100) * position + 50;
   thickness=3.17;
   translate([-40-thickness+1, 0, 22.5]) rotate([0, -90, 0]) rotate([0, 0, 45]) motor(Nema23, NemaMedium);
   translate([0, 0, 22.5]) rotate([0, 90, 0]) union() {
     translate([0, 0, -35]) flexible_coupling_5x8();
-    bearing(688);
-    translate([0, 0, 7]) lock_collar();
+    bearing(model=688);
+    translate([0, 0, 5]) lock_collar(8);
   }
   translate([-20+3, 0, 22.5]) rotate([0, 90, 0]) acme_lead_screw(length+20);
   translate([length, 0, 22.5]) rotate([0, -90, 0]) union() {
-    bearing(688);
-    translate([0, 0, 7]) lock_collar();
+    bearing(model=688);
+    translate([0, 0, 5]) lock_collar();
   }
   for (a=[0,90,180]) {
     translate([0, 0, 22.5]) rotate([-a]) union() {
