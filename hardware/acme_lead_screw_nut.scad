@@ -22,7 +22,7 @@ module acme_lead_screw_nut_plate(material=color_black) {
   }
 }
 
-module acme_lead_screw_nut_block(material=color_black) {
+module acme_lead_screw_nut_block_anti_backlash(material=color_black) {
   w=34;
   h=33;
   thickness=12;
@@ -37,7 +37,7 @@ module acme_lead_screw_nut_block(material=color_black) {
   }
 }
 
-module acme_lead_screw_nut_block_anti_backlash(material=color_black) {
+module acme_lead_screw_nut_block(material=color_black) {
   w=40;
   h=20;
   thickness=3.2;
