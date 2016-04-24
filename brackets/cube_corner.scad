@@ -4,7 +4,7 @@ module cube_corner() {
   size=20.0;
   r1=5.5;
   r2=3.57;
-  rotate([0, -90, 0]) color(color_black) difference() {
+  color(color_black) difference() {
     cube(size);
     union() {
       translate([3.5, size/2, size/2]) rotate([0, 90, 0]) cylinder(r=r1, h=size);
