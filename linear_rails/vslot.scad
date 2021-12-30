@@ -6,7 +6,6 @@ module vslot(length=50, sections=1, finish) {
   cutext=[[0.00, 5.43], [4.57, 10.00], [4.57, 10.10], [-4.57, 10.10], [-4.57, 10.00]];
   cutint=[[-2.84, 3.90], [-0.21, 3.90], [0.00, 3.70], [0.21, 3.90], [2.84, 3.90], [5.50, 6.56], [5.50, 8.20], [2.89, 8.20], [2.89, 9.20], [-2.89, 9.20], [-2.89, 8.20], [-5.50, 8.20], [-5.50, 6.56]];
   cutintin=[[-2.84, 3.90], [-0.21, 3.90], [0.00, 3.70], [0.21, 3.90], [2.84, 3.90], [6.20, 7.30], [8.20, 7.30], [8.20, 10.10], [-8.20, 10.10], [-8.20, 7.30], [-6.20, 7.30]];
-  cutint2=[[8.20, 8.20], [6.57, 8.20], [6.57, 7.62], [7.62, 6.57], [8.20, 6.57]];
 
   module profile() {
     translate([0, 0, length/2]) difference() {
@@ -21,9 +20,6 @@ module vslot(length=50, sections=1, finish) {
             translate([offset, 0, -(total_length)/2]) linear_extrude(total_length) rotate(angle) polygon(cutint);
           } else {
             translate([offset, 0, -(total_length)/2]) linear_extrude(total_length) rotate(angle) polygon(cutintin);
-          }
-          if ((section==0 && (angle==90 || angle==180)) || (section==sections-1 && (angle==0 || angle==270))) {
-            translate([offset, 0, -(total_length)/2]) linear_extrude(total_length) rotate(angle) polygon(cutint2);
           }
         }
       }
